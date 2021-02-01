@@ -1,6 +1,7 @@
 html {
 	box-sizing: border-box;
-	font-size: 16px;
+	font-size: 62.5%;
+
 }
 
 *,
@@ -13,9 +14,14 @@ html,
 body {
 	height: 100%;
 	position: relative;
+
 }
 
-body {}
+body {
+	font-family: 'Philosopher';
+	font-size: 1.6rem;
+	color: #fff;
+}
 
 ul,
 ol,
@@ -37,6 +43,12 @@ input:focus {
 
 button {
 	@include no-btn;
+}
+
+.container {
+	max-width: 124rem;
+	margin: 0 auto;
+	padding: 0 2rem;
 }
 
 .flex {
@@ -67,4 +79,23 @@ button {
 
 .--align-end {
 	align-items: flex-end;
+}
+
+.reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.title {
+	text-align: center;
+	color: $gold;
+	font-weight: 700;
+	font-size: 3.6rem;
+}
+
+.cloud {
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: contain;
 }

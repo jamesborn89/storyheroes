@@ -1,0 +1,68 @@
+.team {
+    padding: 4rem 0;
+    background: linear-gradient(180deg, #2B3452 0%, #2A3353 100%);
+
+    /* .team__title */
+
+    &__title {
+        margin-bottom: 4rem;
+    }
+
+    /* .team__wrapper */
+
+    &__wrapper {}
+
+    /* .team__row */
+
+    &__row {
+        width: 100%;
+        max-width: 40rem;
+    }
+
+    /* .team__item */
+
+    &__item {
+        font-size: 2rem;
+        margin-bottom: 5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    /* .team__item-title */
+
+    &__item-title {
+        display: flex;
+        color: $gold;
+        font-weight: 700;
+    }
+
+    /* .team__item-info */
+
+    &__item-info {
+        display: flex;
+    }
+
+    /* .team__item-name */
+
+    &__item-name {
+        width: 100%;
+        max-width: 20rem;
+    }
+
+    /* .team__item-link */
+
+    &__item-link {
+        a{
+            color: #fff;
+            transition: all 0.3s;
+            outline: transparent;
+
+            &:hover,
+            &:focus-visible {
+                color: $gold;
+            }
+        }
+    }
+}
